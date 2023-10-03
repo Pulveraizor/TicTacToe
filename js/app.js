@@ -63,7 +63,6 @@ const result = document.getElementById('result');
 function handleClick() {
   if (this.textContent == '') {
       if (previousClick == '' || previousClick == '◯') {
-          // this.classList.add('x');
           this.textContent = '✖';
           previousClick = '✖';
           takenByX.push(this.id);
@@ -86,8 +85,6 @@ function handleClick() {
               }
           }
       } else if (previousClick == '✖') {
-          // this.classList.remove('x');
-          // this.classList.add('o');
           this.textContent = '◯';
           previousClick = '◯';
           takenByO.push(this.id);
@@ -111,8 +108,6 @@ function handleClick() {
       }
       return;
   }
-
-  // console.log('This square already has a value');
 }
 
 for (let squareId of squareIds) {
